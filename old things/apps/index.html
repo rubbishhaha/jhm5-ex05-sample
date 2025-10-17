@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Apps Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .app-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        .app-card:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Web Apps Portfolio</h1>
+    <div class="app-grid">
+        <div class="app-card">
+            <h2>Tication (Vanilla JS)</h2>
+            <p>A simple task management app using HTML, CSS, and JavaScript</p>
+            <a href="tication-vanilla/index.html">Launch App</a>
+        </div>
+        <div class="app-card">
+            <h2>Tication (React)</h2>
+            <p>Enhanced task manager with React and LocalStorage</p>
+            <a href="tication-react/index.html">Launch App</a>
+        </div>
+        <div class="app-card">
+            <h2>Tication (Server)</h2>
+            <p>Full-stack task manager with Cloudflare KV</p>
+            <a href="tication-server/index.html">Launch App</a>
+        </div>
+        <div class="app-card">
+            <h2>HKDSE Analyzer</h2>
+            <p>Analyze HKDSE results with interactive visualizations</p>
+            <a href="hkdse-analyzer/index.html">Launch App</a>
+        </div>
+        <div class="app-card">
+            <h2>Math Rush</h2>
+            <p>Test your math skills in this fast-paced game</p>
+            <a href="math-rush/index.html">Launch App</a>
+        </div>
+    </div>
+</body>
+</html>
